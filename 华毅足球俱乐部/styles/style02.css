@@ -18,12 +18,12 @@
 	top: 0;
 	left: 0;
 }
-#Two_0007{
+#Two_header_logo01{
 	position: absolute;
 	bottom: 10px;
 	left: 450px;
 }
-#Two_0007_1{
+#Two_header_logo02{
 	position: absolute;
 	top: 25px;
 	left: 590px;
@@ -39,6 +39,13 @@
 	margin-left: 40px;
 	color: #fff;
 	line-height: 70px;
+}
+.header ul li a{
+	text-decoration: none;
+	display: inline-block;
+}
+.header ul li a:link{
+	color: #fff;
 }
 /* main部分*/
 .main{
@@ -75,7 +82,7 @@
 }
 /* footer部分*/
 .footer{
-	height: 200px;
+	height: 205px;
 	background: #1b1d2c;
 	clear: both;
 	padding-top: 60px;
@@ -90,9 +97,7 @@
 }
 .ul_01 li,.ul_02 li{
 	list-style: none;
-	width: 200px;	
-	line-height: 30px;
-	height: 30px;
+	width: 200px;
 	float: left;
 }
 .ul_01 li{
@@ -101,8 +106,22 @@
 .ul_02 li{
 	color: #fff;
 }
+#footer_ul_011,#footer_ul_012{
+	font-size: 12px;
+	
+	height: 30px;
+	line-height: 30px;
+	width: 170px;
+	padding-left: 30px;
+}
+#footer_ul_011{
+	background: url(../images/Two_footer_weibo.png) no-repeat;
+}
+#footer_ul_012{
+	background: url(../images/Two_footer_weixin.png) no-repeat;
+}
 /* banner部分*/
-.banner{
+.floatingBox{
 	padding-top: 15px;
 	text-align: center;
 	height: 30px;

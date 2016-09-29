@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	background: url(../images/bg.png) no-repeat;
+	width: 1920px;
+	height: 2078px;
+	position: relative;
+}
+/* header部分 */
+.header{
+	position: relative;
+	height: 70px;
+	background: #c81d01;
+	top: 80px;
+}
+#Two_header_logo01{
+	position: absolute;
+	bottom: 10px;
+	left: 450px;
+}
+#Two_header_logo02{
+	position: absolute;
+	top: 25px;
+	left: 590px;
+}
+.nav{
+	float: right;
+	margin-right: 470px;
+}
+.nav a{
+	background: #c81d01;
+	display: block;
+	color: #fff;
+	padding: 24px 20px;
+	text-decoration: none;
+}
+.nav a:hover{
+	background: #9d0300;
+}
+.nav li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+.nav li ul {
+	display: none;
+}
+/* 下拉菜单部分 */
+.nav li ul{
+	position: absolute;
+	left: -40px;
+	top: 100%;
+}
+.nav li li{
+	float: none;
+}
+.nav li li a{
+	width: 120px;
+	padding: 10px 20px;
+	font-size: 14px;
+	text-align: center;
+}
+.nav li:hover > ul{
+	display: block;
+}
+/* banner部分 */
+.banner{
+	margin: 50px auto;
+	width: 1000px;
+	padding: 80px;
+}
+/* photoWall部分 */
+.photoWall{
+	background: url(../images/photoWall.png) no-repeat;
+	height: 690px;
+	margin: 20px auto;
+	width: 1000px;
+	position: relative;
+}
+#floatingBox{
+	position: absolute;
+	left: 1000px;
+	top: -60px;
+}
+/* sighUp部分 */
+.signUp{
+	background: url(../images/signUp.png) no-repeat;
+	height: 350px;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+.signUp a{
+	display: inline-block;
+	font-size: 30px;
+	color: #000;
+	width: 185px;
+	height: 55px;
+	line-height: 55px;
+	background: #fff524;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	position: relative;
+	top: 240px;
+	left: 850px;
+}
+/* footer部分 */
+/* footer部分*/
+.footer{
+	height: 205px;
+	background: #1b1d2c;
+	clear: both;
+	padding-top: 60px;
+}
+.ul_01,.ul_02{
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.ul_01{
+	height: 40px;
+}
+.ul_01 li,.ul_02 li{
+	list-style: none;
+	width: 200px;
+	float: left;
+}
+.ul_01 li{
+	color: #9f9fa0;	
+}
+.ul_02 li{
+	color: #fff;
+}
+#footer_ul_011,#footer_ul_012{
+	font-size: 12px;
+	
+	height: 30px;
+	line-height: 30px;
+	width: 170px;
+	padding-left: 30px;
+}
+#footer_ul_011{
+	background: url(../images/Two_footer_weibo.png) no-repeat;
+}
+#footer_ul_012{
+	background: url(../images/Two_footer_weixin.png) no-repeat;
+}
+.copyright{
+	padding-top: 15px;
+	text-align: center;
+	height: 30px;
+	background: #000;
+}
+/* .floatingBox{
+	position: fixed;
+	left: 820px;
+	top: 300px;
+} */
