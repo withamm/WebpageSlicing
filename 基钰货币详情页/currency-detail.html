@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>基煜基金</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Marc" />
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- IOS6全屏 Chrome高版本全屏 ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- 让360双核浏览器用webkit内核渲染页面 ================================================== -->
+    <meta name="renderer" content="webkit" />
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="allcss.css" rel="stylesheet" type="text/css" />
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body id="currPage" data-pageJs="pageJs/currency-detail">
+<div class="header">
+    <div class="full-wrap">
+        <div class="content">
+            <a href="index.html" class="logo"><h1 class="hidden">基煜基金</h1></a>
+            <ul class="menu">
+                <li class="active"><a href="index.html" class="link"><span>首页</span></a></li>
+                <li><a href="#" class="link"><span>基金产品</span></a></li>
+                <li><a href="#" class="link"><span>基金公司</span></a></li>
+                <li><a href="#" class="link"><span>帮助中心</span></a></li>
+                <li><a href="#" class="link"><span>关于基煜</span></a></li>
+            </ul>
+            <!--搜索按钮-->
+            <ul class="search">
+                <li class="search-li first">
+                    <div class="input-search">
+                        <button type="submit" class="input-search-btn"><i class="glyphicon glyphicon-search"
+                                                                           aria-hidden="true"></i></button>
+                        <input type="text"  name="searchTop" id="searchTop" class="form-control place"
+                               placeholder="搜索"  maxlength="40" />
+                    </div>
+                </li>
+                <li class="search-li"><a href="#" class="btn btn-red"><span>登陆</span></a>
+                </li>
+                <li class="search-li"><a href="#" class="btn"><span>注册</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main main-top">
+    <div class="wrap">
+        <div class="main-content">
+            <!--货币详情-->
+            <div class="maintop clearfix">
+                <div class="maintop-left">
+                    <div class="left-top ">
+                        <ul class="J_lineChartTad">
+                            <li class="selected"><span>七日年化走势</span></li>
+                            <li><span>万份收益走势</span></li>
+                        </ul>
+                    </div>
+                    <div class="left-bottom J_chartLineContainer">
+                        <div class="J_chartLine">
+                           <div class="data J_sevenDaysChangeLine">
+                                <ul>
+                                    <li class="active">1个月</li>
+                                    <li>3个月</li>
+                                    <li>1年</li>
+                                    <li>今年以来</li>
+                                </ul>
+                                <span>今年以来涨幅<span>1.70%</span></span>
+                            </div>
+                            <div id="J_lineChartA" class="line-chart" style="width: 430px;height: 360px; "></div>
+                        </div>
+                        <div class="J_chartLine" style="display: none; ">
+                            <div class="data J_incomeChangeLine">
+                                <ul>
+                                    <li class="active">1个月</li>
+                                    <li>3个月</li>
+                                    <li>1年</li>
+                                    <li>今年以来</li>
+                                </ul>
+                                <span>今年以来涨幅<span>1.90%</span></span>
+                            </div>
+                            <div id="J_lineChartB" class="line-chart" style="width: 430px;height: 360px; "></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maintop-right">
+                    <div class="right-top">
+                        <span>博时现金宝货币<span>(000730)</span></span>
+                        <ul>
+                            <li><i></i>货币型</li>
+                            <li><i></i>2005年9月30日</li>
+                            <li id="select-heart"><i class="fa fa-heart-o select-heart"></i>加自选</li>
+                        </ul>
+                    </div>
+                    <div class="right-mid clearfix">
+                        <ul>
+                            <li><span class="text-01">万份收益</span> <span>0.8988</span></li>
+                            <li><span class="text-01">七年年化</span> <span>3.7%</span></li>
+                            <li><span class="text-01">七年年化排名</span> <span>3/70</span></li>
+                        </ul>
+                        <ul>
+                            <li><span class="text-01">稳定性</span> <span>0.88</span></li>
+                            <li><span class="text-01">基金规模</span> <span>1000亿</span></li>
+                            <li><span class="text-01">基金规模排名</span> <span>5/233</span></li>
+                        </ul>
+                        <ul>
+                            <li><span class="text-01">近一月年化收益率</span> <span>3.80%</span></li>
+                            <li><span class="text-01">近三月年化收益率</span> <span>3.70%</span></li>
+                            <li><span class="text-01">近半年年化收益率</span> <span>3.70%</span></li>
+                        </ul>
+                    </div>
+                    <div class="right-bottom clearfix">
+                        <div class="div-01 text-01">最高投资金额<span>5亿</span></div>
+                        <div class="div-02 text-01 margin-com">投资金额<span><i></i>您输入的投资金额有误，请输入正确的投资金额</span></div>
+                        <div class="div-03"><span class="text-01">购买限制</span>
+                            <span>
+                                <ul>
+                                    <li>5亿-20亿，45天</li>
+                                    <li>5亿-20亿，45天</li>
+                                    <li>5亿-20亿，45天</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="div-04 margin-com">
+                            <div>
+                                <ul class="J_FilterNum" data-tpl="J_FilterNumContainer">
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><span class="text">亿</span></li>
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><input class="J_FilterInput" type="text" value="0"></li>
+                                    <li><span class="text">万元</span></li>
+
+                                </ul>
+                            </div>
+                            <div class="number J_FilterNumContainer">
+                                <span class="pre-text J_PreText"></span>亿<span class="next-text J_NextText"></span>万元
+                            </div>
+                        </div>
+                        <div class="div-05">额度预约<span>( 可提高额度 )</span></div>
+                        <div class="div-06 margin-com clearfix" >
+                            <div class="left detail">
+                                <div class="detail-one">赎回到帐时间<span>T+1</span></div>
+                                <div class="detail-two">申购费<span class="text-red">0%</span><span class="text-ye J_detail">费率详情
+                                </span></div>
+                            </div>
+                            <div class="button">
+                                立即申购
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--货币信息详情-->
+            <div class="data-detail">
+                <div class="tab-view">
+                    <ul class="clearfix">
+                        <li class="tab-active">
+                            <span>收益信息</span>
+                        </li>
+                        <li >
+                            <span>基本信息</span>
+                        </li>
+                        <li >
+                            <span>资产分布</span>
+                        </li>
+                        <li >
+                            <span>基金公告</span>
+                        </li>
+                        <li >
+                            <span>费率详情</span>
+                        </li>
+                        <li>
+                            <span>基金经理</span>
+                        </li>
+                        <li >
+                            <span>基金分红</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-container" >
+                    <!-- 收益信息 -->
+                    <div class="content content-one">
+                            <p class="data-prop">导出近三个月的数据</p>
+                        <div class="c-box-content">
+                            <div class="table-wrap-line">
+                                <table  id="J_tableIncome" class="display myTable mydatatables" cellspacing="0"
+                                        width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th>日期</th>
+                                        <th>七日年化</th>
+                                        <th>万份收益</th>
+                                    </tr>
+                                    </thead>
+                                    <!--<tbody>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--<tr>-->
+                                        <!--<td>2016-07-01</td>-->
+                                        <!--<td>3.00%</td>-->
+                                        <!--<td>1.6800</td>-->
+                                    <!--</tr>-->
+                                    <!--</tbody>-->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 基本信息-->
+                    <div class="content content-two" style="display: none">
+                        <ul>
+                            <li>
+                                <h5>基金管理人：</h5>
+                                <p>博时基金管理有限公司</p>
+                            </li>
+                            <li>
+                                <h5>基金托管人：</h5>
+                                <p>中国工商银行股份有限公司</p>
+                            </li>
+                            <li>
+                                <h5>投资目标：</h5>
+                                <p>在保持基金资产的低风险和高流动性的前提下，力争实现超越业绩比较基准的投资回报。</p>
+                            </li>
+                            <li>
+                                <h5>投资理念：</h5>
+                                <p>以价值分析为基础，宏观与微观、定性与定量相结合，通过专业的流动性管理为投资者实现资产的保值、增值。</p>
+                            </li>
+                            <li>
+                                <h5>投资范围：</h5>
+                                <p>本基金投资于法律法规及监管机构允许投资的金融工具，包括现金，通知存款，短期融资券，一年以内（含一年）的银行定期存款、大额存单，期限在一年以内（含一年）的债券回购，期限在一年以内（含一年）的中央银行票据，剩余期限在397天以内（含397天）的债券、资产支持证券、中期票据，以及中国证监会及/或中国人民银行认可的其他具有良好流动性的金融工具。如果法律法规或监管机构以后允许货币市场基金投资其他品种，基金管理人在履行适当程序后，可以将其纳入投资范围。</p>
+                            </li>
+                            <li>
+                                <h5>投资策略：</h5>
+                                <p>本基金将结合宏观分析和微观分析制定投资策略，力求在满足安全性、流动性需要的基础上实现更高的收益率。 </p>
+                            </li>
+                            <li>
+                                <h5>业绩比较基准：</h5>
+                                <p>本基金将结合宏观分析和微观分析制定投资策略，力求在满足安全性、流动性需要的基础上实现更高的收益率。 </p>
+                            </li>
+                            <li>
+                                <h5>风险管理机制：</h5>
+                                <p>针对本基金所面临的各种风险采取事前、事中和事后的全程风险管理措施，有效降低或规避各类风险。</p>
+                            </li>
+                            <li>
+                                <h5>销售机构：</h5>
+                                <p>博时基金管理有限公司 、代销机构列表</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 资产分布 -->
+                    <div class="content content-three" style="display: none" >
+                        <!-- 饼图 -->
+                        <div class="chart clearfix">
+                            <div class="chart-img">
+                                <!--<img src="./images/chart.jpg">-->
+                                <div id="J_chart" style="width:380px; height: 200px;"></div>
+                            </div>
+                            <div class="chart-data clearfix">
+                                <ul class="data-list-one">
+                                    <li>
+                                        <p class="item-one"><span class="round-01"></span>银行存款</p>
+                                        <p class="item-two">11<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-02"></span>债券</p>
+                                        <p class="item-two">19<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-03"></span>买入反售证券</p>
+                                        <p class="item-two">7<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-04"></span>其他资产</p>
+                                        <p class="item-two">11<span>%</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="data-list-two">
+                                    <li>
+                                        <p class="item-one"><span class="round-05"></span>银行存款</p>
+                                        <p class="item-two">11<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-06"></span>债券</p>
+                                        <p class="item-two">19<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-07"></span>买入反售证券</p>
+                                        <p class="item-two">7<span>%</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-08"></span>其他资产</p>
+                                        <p class="item-two">11<span>%</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="data-list-three">
+                                    <li>
+                                        <p class="item-one"><span class="round-01"></span>银行存款</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-02"></span>债券</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-03"></span>买入反售证券</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-04"></span>其他资产</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                </ul>
+                                <ul class="data-list-four">
+                                    <li>
+                                        <p class="item-one"><span class="round-05"></span>银行存款</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-06"></span>债券</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-07"></span>买入反售证券</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                    <li>
+                                        <p class="item-one"><span class="round-08"></span>其他资产</p>
+                                        <p class="item-two">222,222,222,222<span>元</span></p>
+                                    </li>
+                                </ul>
+                                <p class="total">资产总计<span class="num">999,999,999,999,</span> <span class="size-14">元</span></p>
+                            </div>
+                        </div>
+                        <!-- form -->
+                        <div class="form-group-third">
+                            <p class="form-title">持债市值<span class="text">跟新时间 2016-06-08</span></p>
+                            <div class="c-box-content" style="margin-bottom: 40px;">
+                                <div class="table-wrap-line">
+                                    <table class="display myTable mydatatables" cellspacing="0" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>债券名称</th>
+                                            <th>债券代码</th>
+                                            <th>债券市值</th>
+                                            <th>债券市值比</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="yellow">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="yellow">
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <p class="form-title">持股配置</p>
+                            <div class="c-box-content">
+                                <div class="table-wrap-line">
+                                    <table id="tableCompanyDetail01" class="display myTable mydatatables" cellspacing="0" width="100%">
+                                        <thead>
+                                        <tr>
+                                            <th>股票名称</th>
+                                            <th>股票代码</th>
+                                            <th>占市值比例</th>
+                                            <th>占流通股本比例</th>
+                                            <th>持有市值（元）</th>
+                                            <th>持有股数</th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 基金公告-->
+                    <div class="content content-four" style="display: none" >
+                        <div class="c-box-content" >
+                            <div class="table-wrap-line">
+                                <table id="J_announcement" class="display myTable mydatatables" cellspacing="0"
+                                width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-left">标题</th>
+                                        <th class="text-right">日期</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">博时现金宝货币基金2016年第2季度报告</td>
+                                        <td class="text-right">2016-07-08</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--费率详情 5 -->
+                    <div class="content content-five" style="display: none" >
+                        <div class="form-group">
+                            <p class="form-title"><span></span>运作费率</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>管理费率</th>
+                                        <th class="border-style">托管费率</th>
+                                        <th>销售服务费率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0.01%</td>
+                                        <td class="border-style">0.01%</td>
+                                        <td>0.01%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group group-two">
+                            <p class="form-title"><span></span>申购费率</p>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th class="border-right">使用金额(元)</th>
+                                    <th>费率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="border-right">- -</td>
+                                    <td>- -</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group group-three">
+                            <p class="form-title"><span></span> 赎回费率</p>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th class="border-right">适用期限</th>
+                                    <th>费率</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="border-right">- -</td>
+                                    <td>- -</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!--基金经理 6 -->
+                    <div class="content content-six" style="display: none">
+                            <div class="form-group">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="name">基金经理</th>
+                                            <th class="date border-style">任期</th>
+                                            <th class="info">简介</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="border-bottom">叶经理</td>
+                                            <td class="border-bottom border-style">2014-07-09 ~至今</td>
+                                            <td class=" border-bottom info">
+                                                基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介</td>
+                                        </tr>
+                                        <tr>
+                                            <td>叶经理</td>
+                                            <td class="border-style">2014-07-09 ~至今</td>
+                                            <td class="info">
+                                                基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介基金经理简介</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                    <!--基金分红 7 -->
+                    <div class="content content-seven" style="display: none">
+                        <div class="c-box-content">
+                            <div class="table-wrap-line">
+                                <table  id="J_bonusTable" class="display myTable mydatatables" cellspacing="0"
+                                       width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th>年份</th>
+                                        <th>权益登记日</th>
+                                        <th>除息日</th>
+                                        <th>每份分红</th>
+                                        <th>分红放日</th>
+                                    </tr>
+                                    </thead>
+                                    <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                        <!--<tr>-->
+                                            <!--<td>2016年</td>-->
+                                            <!--<td>2016-03-02</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                            <!--<td>每份派现金0.2600元</td>-->
+                                            <!--<td>2016-03-04</td>-->
+                                        <!--</tr>-->
+                                    <!--</tbody>-->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+        <div class="top">
+            <div class="wrap clearfix">
+                <div class="foot-icon foot-icon-01">
+                    <h4>地址：</h4>
+                    <p>
+                        上海市昆明路518号北美广场A1002 室  邮编:200812
+                    </p>
+                </div>
+                <div class="foot-icon foot-icon-02">
+                    <h4>通讯：</h4>
+                    <p>
+                        电话:021-65370077 － 传真:021-55085991
+                    </p>
+                </div>
+                <div class="foot-icon foot-icon-03">
+                    <h4>客服热线：</h4>
+                    <p>
+                        400-820-5369
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrap">
+                <div class="bottom-link clearfix">
+                    <ul>
+                        <li><a href="#" class="link">投资者权益须知</a>
+                        </li>
+                        <li><a href="#" class="link">投资者教育手册</a>
+                        </li>
+                        <li><a href="#" class="link">安全指引</a>
+                        </li>
+                        <li><a href="#" class="link">人员资质</a>
+                        </li>
+                        <li><a href="#" class="link">资质证明</a>
+                        </li>
+                        <li><a href="#" class="link">帐号公示</a>
+                        </li>
+                        <li><a href="#" class="link">销售适用性制度</a>
+                        </li>
+                        <li><a href="#" class="link">关于我们</a>
+                        </li>
+                        <li><a href="#" class="link">帮助中心</a>
+                        </li>
+                        <li><a href="#" class="link">友情链接</a>
+                        </li>
+                        <li><a href="#" class="link">法律声明</a>
+                        </li>
+                        <li><a href="#" class="link">联系我们</a>
+                        </li>
+                        <li><a href="#" class="link">操作指引</a>
+                        </li>
+                        <li><a href="#" class="link">法规与知识</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content clearfix">
+                    <div class="center">Copyright 2016 上海基煜基金销售有限公司 沪ICP备14043616号</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascript with AMD  -->
+    <script src="lib/require.js" data-main="js/main"></script>
+</body>
+</html>
