@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>newsDetail</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="zepto.min.js"></script>
+	<script>
+    (function(b){
+        var a={};
+        a.Html=b.getElementsByTagName("html")[0];
+        a.widthProportion=function(){
+            var c=(b.body&&b.body.clientWidth||a.Html.offsetWidth)/430;
+            return c>1?1:c
+        };
+        a.changePage=function(){
+            a.Html.setAttribute("style","font-size:"+a.widthProportion()*1+"rem")
+        };
+        a.changePage();
+        setInterval(a.changePage,1)
+    })(document);
+</script>
+</head>
+<body>
+	<div class="newsDetail">
+		<div class="top">
+			<div class="back"><a href=""><img src="images/top_fanhui@2x.png" alt=""></a></div>
+			<div class="title">
+				<h1>新闻详情</h1>
+			</div>
+			<div class="share"><a href=""><img src="images/top_fenxiang@2x.png" alt=""></a></div>
+		</div>
+		<div class="main">			
+			<div class="title">
+				<h1>北京市开展中小学实验教学说课活动</h1>
+				<h5>上传时间：2016.09.15</h5>
+			</div>
+			<div class="content">
+				<p>近日，一份“教育部发布《2016年全国百强高中》名单”的信息在网络上传播。有媒体致电我部求证是否进行过这样的评选。</p>
+				<p>鉴此，郑重声明：教育部及其相关司局没有开展过全国百强高中、高中排行榜等类似评选和排名活动，也没有发布过此类信息。</p>
+				<p>教育部认为，从全国众多普通高中学校中选出100所或几百所进行排名，不符合实施素质教育的要求，不利于普通高中多样化、有特色发展。教育部希望高中学校自觉抵制此类具有商业性质、没有科学评价标准的评选和排名活动，潜心办学，精心育人，扎实推进素质教育。教育部提醒社会公众提高警惕，防止被此类信息误导</p>
+			</div>
+			<div class="footer">
+				<h5>来源：中国教育行业协会</h5>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

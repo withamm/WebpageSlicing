@@ -1,0 +1,444 @@
+/* line 5, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, E:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/style.scss */
+.newsDetail .top {
+  height: 1.4rem;
+  padding: 0.9rem;
+  background: #28A83B;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 9, ../sass/style.scss */
+.newsDetail .top .back {
+  float: left;
+}
+/* line 11, ../sass/style.scss */
+.newsDetail .top .back img {
+  width: 0.7rem;
+  height: 1.4rem;
+}
+/* line 16, ../sass/style.scss */
+.newsDetail .top .title {
+  display: inline-block;
+}
+/* line 18, ../sass/style.scss */
+.newsDetail .top .title h1 {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  line-height: 1.4rem;
+}
+/* line 24, ../sass/style.scss */
+.newsDetail .top .share {
+  float: right;
+}
+/* line 26, ../sass/style.scss */
+.newsDetail .top .share img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+/* line 32, ../sass/style.scss */
+.newsDetail .main {
+  margin: 1.1rem 0.9rem 0rem 0.9rem;
+}
+/* line 35, ../sass/style.scss */
+.newsDetail .main .title h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+/* line 39, ../sass/style.scss */
+.newsDetail .main .title h5 {
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+/* line 45, ../sass/style.scss */
+.newsDetail .main .content p {
+  margin-top: 2.1rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  opacity: 0.69;
+}
+/* line 52, ../sass/style.scss */
+.newsDetail .main .footer {
+  margin-top: 2.1rem;
+}
+/* line 54, ../sass/style.scss */
+.newsDetail .main .footer h5 {
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+
+/* line 61, ../sass/style.scss */
+.live {
+  background: #EAEAEA;
+}
+/* line 63, ../sass/style.scss */
+.live .top {
+  background: #FFFFFF;
+  position: relative;
+}
+/* line 66, ../sass/style.scss */
+.live .top .back {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+}
+/* line 70, ../sass/style.scss */
+.live .top .back img {
+  width: 0.7rem;
+  height: 1.4rem;
+}
+/* line 75, ../sass/style.scss */
+.live .top .share {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+}
+/* line 79, ../sass/style.scss */
+.live .top .share img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+/* line 84, ../sass/style.scss */
+.live .top .video {
+  height: 13.7rem;
+  background: #000000;
+}
+/* line 89, ../sass/style.scss */
+.live .top .title .mainTitle {
+  margin: 0.7rem 0.9rem 0.4rem 0.9rem;
+  overflow: hidden;
+}
+/* line 92, ../sass/style.scss */
+.live .top .title .mainTitle h1 {
+  margin-top: 0.2rem;
+  float: left;
+  font-size: 1.3rem;
+}
+/* line 97, ../sass/style.scss */
+.live .top .title .mainTitle span {
+  display: inline-block;
+  float: right;
+  width: 3.4rem;
+  height: 1.4rem;
+  border-radius: 0.1rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  text-align: center;
+}
+/* line 107, ../sass/style.scss */
+.live .top .title .mainTitle .on {
+  border: 0.1rem solid #28A83B;
+  color: #28A83B;
+}
+/* line 111, ../sass/style.scss */
+.live .top .title .mainTitle .not {
+  border: 0.1rem solid #FF6E23;
+  color: #FF6E23;
+}
+/* line 116, ../sass/style.scss */
+.live .top .title .cue {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  overflow: hidden;
+  padding: 0rem 0.9rem 0.7rem 0.9rem;
+}
+/* line 121, ../sass/style.scss */
+.live .top .title .cue p {
+  float: left;
+  font-size: 1rem;
+}
+/* line 124, ../sass/style.scss */
+.live .top .title .cue p span {
+  opacity: 0.4;
+}
+/* line 129, ../sass/style.scss */
+.live .top .title .follow {
+  position: relative;
+  float: right;
+  width: 2.3rem;
+  height: 1.4rem;
+}
+/* line 134, ../sass/style.scss */
+.live .top .title .follow span:first-child {
+  position: absolute;
+  top: 0.1rem;
+  right: 2.3rem;
+  display: inline-block;
+  width: 1rem;
+  height: 0.9rem;
+}
+/* line 142, ../sass/style.scss */
+.live .top .title .follow .gray {
+  background: url(../images/btn_like_1@2x.png) no-repeat;
+  background-size: contain;
+}
+/* line 146, ../sass/style.scss */
+.live .top .title .follow .red {
+  background: url(../images/btn_like_2@2x.png) no-repeat;
+  background-size: contain;
+}
+/* line 150, ../sass/style.scss */
+.live .top .title .follow .num {
+  position: absolute;
+  top: 0rem;
+  right: 0.1rem;
+  color: #989898;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+/* line 161, ../sass/style.scss */
+.live .main {
+  margin-top: 0.6rem;
+  background: #FFFFFF;
+}
+/* line 164, ../sass/style.scss */
+.live .main .tab {
+  overflow: hidden;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+/* line 167, ../sass/style.scss */
+.live .main .tab div {
+  width: 50%;
+  text-align: center;
+  float: left;
+  font-size: 1rem;
+}
+/* line 172, ../sass/style.scss */
+.live .main .tab div span {
+  display: inline-block;
+  width: 2.9rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+/* line 179, ../sass/style.scss */
+.live .main .tab .selected {
+  color: #2AAC38;
+}
+/* line 181, ../sass/style.scss */
+.live .main .tab .selected span {
+  padding-bottom: 0.6rem;
+  border-bottom: 0.1rem solid #2AAC38;
+}
+/* line 188, ../sass/style.scss */
+.live .main .commentWrap .comment {
+  padding-top: 1rem;
+  overflow: hidden;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+/* line 192, ../sass/style.scss */
+.live .main .commentWrap .comment .head {
+  float: left;
+  margin: 0rem 0.9rem;
+}
+/* line 195, ../sass/style.scss */
+.live .main .commentWrap .comment .head img {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 2.9rem;
+}
+/* line 201, ../sass/style.scss */
+.live .main .commentWrap .comment .info {
+  float: left;
+  font-size: 1rem;
+  opacity: 0.8rem;
+}
+/* line 205, ../sass/style.scss */
+.live .main .commentWrap .comment .info .name {
+  margin: 0.1rem 0rem 0.9rem 0rem;
+}
+/* line 208, ../sass/style.scss */
+.live .main .commentWrap .comment .info .time {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+/* line 211, ../sass/style.scss */
+.live .main .commentWrap .comment .info .time span {
+  margin-right: 0.8rem;
+}
+/* line 215, ../sass/style.scss */
+.live .main .commentWrap .comment .info .words {
+  margin-bottom: 0.9rem;
+}
+/* line 220, ../sass/style.scss */
+.live .main .commentWrap .discuss {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 0.1rem solid #E4E2E2;
+  overflow: hidden;
+}
+/* line 226, ../sass/style.scss */
+.live .main .commentWrap .discuss input {
+  float: left;
+  margin: 0.4rem 0rem 0.4rem 0.9rem;
+  width: 19.9rem;
+  height: 2.3rem;
+  border: 0.1rem solid #ECECEC;
+}
+/* line 233, ../sass/style.scss */
+.live .main .commentWrap .discuss span {
+  margin: 0.4rem 0.9rem 0.4rem 0rem;
+  float: right;
+  display: inline-block;
+  width: 4.5rem;
+  height: 2.3rem;
+  background: #2AAC38;
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 2.3rem;
+  text-align: center;
+}
+/* line 247, ../sass/style.scss */
+.live .main .listWrap {
+  display: none;
+}
+/* line 249, ../sass/style.scss */
+.live .main .listWrap .list {
+  padding: 0.9rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+/* line 253, ../sass/style.scss */
+.live .main .listWrap .list .listName {
+  float: left;
+  width: 6rem;
+  margin-right: 1.5rem;
+}
+/* line 257, ../sass/style.scss */
+.live .main .listWrap .list .listName .head {
+  width: 2.9rem;
+  margin: 0 auto;
+}
+/* line 260, ../sass/style.scss */
+.live .main .listWrap .list .listName .head img {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 2.9rem;
+}
+/* line 266, ../sass/style.scss */
+.live .main .listWrap .list .listName .name {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* line 272, ../sass/style.scss */
+.live .main .listWrap .list .info {
+  float: left;
+}
+/* line 274, ../sass/style.scss */
+.live .main .listWrap .list .info .title {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+/* line 281, ../sass/style.scss */
+.live .main .listWrap .list .info .time {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+/* line 287, ../sass/style.scss */
+.live .main .listWrap .list .info .state {
+  margin-top: 0.6rem;
+  height: 1.1rem;
+  width: 3.5rem;
+  line-height: 1.1rem;
+  font-size: 0.6rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+/* line 296, ../sass/style.scss */
+.live .main .listWrap .list .info .on {
+  background: #2AAC38;
+}
+/* line 299, ../sass/style.scss */
+.live .main .listWrap .list .info .over {
+  background: #797979;
+}
+/* line 302, ../sass/style.scss */
+.live .main .listWrap .list .info .yet {
+  background: #FF6E23;
+}
+/* line 306, ../sass/style.scss */
+.live .main .listWrap .list .interest {
+  float: right;
+  width: 2.6rem;
+  height: 1.9rem;
+  margin-top: 1.4rem;
+}
+/* line 312, ../sass/style.scss */
+.live .main .listWrap .list .add {
+  background: url(../images/icon_jiaguanzhu.png) no-repeat;
+  background-size: contain;
+}
+/* line 316, ../sass/style.scss */
+.live .main .listWrap .list .added {
+  background: url(../images/icon_yiguanzhu.png) no-repeat;
+  background-size: contain;
+}

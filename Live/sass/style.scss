@@ -1,0 +1,324 @@
+@import "compass/reset";
+.newsDetail{
+	.top{
+		height: 1.4rem;
+		padding: 0.9rem;
+		background: #28A83B;
+		text-align: center;
+		overflow: hidden;
+		.back{
+			float: left;
+			img{
+				width: 0.7rem;
+			    height: 1.4rem;
+			}
+		}
+		.title{
+			display: inline-block;
+			h1{
+				color: #FFFFFF;
+				font-size: 1.3rem;
+				line-height: 1.4rem;
+			}
+		}
+		.share{
+			float: right;
+			img{
+				width: 1.4rem;
+				height: 1.4rem;
+			}
+		}
+	}
+	.main{
+		margin: 1.1rem 0.9rem 0rem 0.9rem;
+		.title{
+			h1{
+				font-size: 1.3rem;
+				margin-bottom: 0.6rem;
+			}
+			h5{
+				font-size: 0.9rem;
+				opacity: 0.4;
+			}
+		}
+		.content{
+			p{
+				margin-top: 2.1rem;
+				font-size: 1rem;
+				line-height: 1.6rem;
+				opacity: 0.69;
+			}
+		}
+		.footer{
+			margin-top: 2.1rem;
+			h5{
+				font-size: 0.9rem;
+				opacity: 0.4;
+			}
+		}
+	}
+}
+.live{
+	background: #EAEAEA;
+	.top{
+		background: #FFFFFF;
+		position: relative;
+		.back{
+			position: absolute;
+			top: 0.9rem;
+			left: 0.9rem;
+			img{
+				width: 0.7rem;
+				height: 1.4rem;
+			}
+		}
+		.share{
+			position: absolute;
+			top: 0.9rem;
+			right: 0.9rem;
+			img{
+				width: 1.4rem;
+				height: 1.4rem;
+			}
+		}
+		.video{
+			height: 13.7rem;
+			background: #000000;
+		}
+		.title{
+			.mainTitle{
+				margin: 0.7rem 0.9rem 0.4rem 0.9rem;
+				overflow: hidden;
+				h1{
+					margin-top: 0.2rem;
+					float: left;
+					font-size: 1.3rem;
+				}
+				span{
+					display: inline-block;
+					float: right;
+					width: 3.4rem;
+					height: 1.4rem;
+					border-radius: 0.1rem;
+					font-size: 0.9rem;
+					line-height: 1.3rem;
+					text-align: center;
+				}
+				.on{
+					border: 0.1rem solid #28A83B;
+					color: #28A83B;
+				}
+				.not{
+					border: 0.1rem solid #FF6E23;
+					color: #FF6E23;
+				}
+			}
+			.cue{
+				height: 1.4rem;
+				line-height: 1.4rem;
+				overflow: hidden;
+				padding: 0rem 0.9rem 0.7rem 0.9rem;
+				p{
+					float: left;
+					font-size: 1rem;
+					span{
+						opacity: 0.4;
+					}
+				}
+			}
+			.follow{
+				position: relative;
+				float: right;
+				width: 2.3rem;
+				height: 1.4rem;
+				span:first-child{
+					position: absolute;
+					top: 0.1rem;
+					right: 2.3rem;
+					display: inline-block;
+					width: 1rem;
+					height: 0.9rem;
+				}
+				.gray{				
+					background: url(../images/btn_like_1@2x.png)no-repeat;
+					background-size: contain;
+				}
+				.red{
+					background: url(../images/btn_like_2@2x.png)no-repeat;
+					background-size: contain;
+				}
+				.num{
+					position: absolute;
+					top: 0rem;
+					right: 0.1rem;
+					color: #989898;
+					font-size: 0.8rem;
+					line-height: 1.1rem;
+				}
+			}
+		}
+	}
+	.main{
+		margin-top: 0.6rem;
+		background: #FFFFFF;
+		.tab{
+			overflow: hidden;
+			border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+			div{
+				width: 50%;
+				text-align: center;
+				float: left;
+				font-size: 1rem;
+				span{
+					display: inline-block;
+					width: 2.9rem;
+					padding-top: 0.7rem;
+					padding-bottom: 0.7rem;
+				}
+			}
+			.selected{
+				color: #2AAC38;
+				span{
+					padding-bottom: 0.6rem;
+					border-bottom: 0.1rem solid #2AAC38;
+				}
+			}
+		}
+		.commentWrap{
+			.comment{
+				padding-top: 1rem;
+				overflow: hidden;
+				border-bottom: 0.1rem solid rgba(0,0,0,0.1); 
+				.head{
+					float: left;
+					margin:0rem 0.9rem;
+					img{
+						width: 2.9rem;
+						height: 2.9rem;
+						border-radius: 2.9rem;
+					}
+				}
+				.info{
+					float: left;
+					font-size: 1rem;
+					opacity: 0.8rem;
+					.name{
+						margin: 0.1rem 0rem 0.9rem 0rem;
+					}
+					.time{
+						opacity: 0.5; 
+						margin-bottom: 1rem;
+						span{
+							margin-right: 0.8rem;
+						}
+					}
+					.words{
+						margin-bottom: 0.9rem;
+					}
+				}
+			}
+			.discuss{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				border-top: 0.1rem solid #E4E2E2;
+				overflow: hidden;
+				input{
+					float: left;
+					margin: 0.4rem 0rem 0.4rem 0.9rem;
+					width: 19.9rem;
+					height: 2.3rem;
+					border: 0.1rem solid #ECECEC;  
+				}	
+				span{
+					margin: 0.4rem 0.9rem 0.4rem 0rem;
+					float: right;
+					display: inline-block;
+					width: 4.5rem;
+					height: 2.3rem;
+					background: #2AAC38;
+					color: #FFFFFF;
+					font-size: 1rem;
+					line-height: 2.3rem;
+					text-align: center;
+				}			
+			}
+		}
+		.listWrap{
+			display: none;
+			.list{
+				padding: 0.9rem;
+				border-bottom: 0.1rem solid rgba(0,0,0,0.1); 
+				overflow: hidden;
+				.listName{
+					float: left;
+					width: 6rem;
+					margin-right: 1.5rem;
+					.head{
+						width: 2.9rem;
+						margin: 0 auto;
+						img{
+							width: 2.9rem;
+							height: 2.9rem;
+							border-radius: 2.9rem;
+						}
+					}
+					.name{
+						margin-top: 0.6rem;
+						font-size: 0.9rem;
+						opacity: 0.8;
+					}
+				}
+				.info{
+					float: left;
+					.title{
+						height: 1.4rem;
+						line-height: 1.4rem;
+						margin-top: 0.1rem;
+						margin-bottom: 0.2rem;
+						font-size: 1rem;
+					}
+					.time{
+						height: 1.2rem;
+						line-height: 1.2rem;
+						font-size: 0.9rem;
+						opacity: 0.4;
+					}
+					.state{
+						margin-top: 0.6rem;
+						height: 1.1rem;
+						width: 3.5rem;
+						line-height: 1.1rem;
+						font-size: 0.6rem;
+						color: #FFFFFF;
+						text-align: center;
+					}
+					.on{
+						background: #2AAC38;
+					}
+					.over{
+						background: #797979;
+					}
+					.yet{
+						background: #FF6E23;
+					}
+				}
+				.interest{
+					float: right;
+					width: 2.6rem;
+					height: 1.9rem;
+					margin-top: 1.4rem;
+				}
+				.add{
+					background: url(../images/icon_jiaguanzhu.png)no-repeat;
+					background-size: contain;
+				}
+				.added{
+					background: url(../images/icon_yiguanzhu.png)no-repeat;
+					background-size: contain;
+				}
+			}	 
+		}
+
+	}
+}

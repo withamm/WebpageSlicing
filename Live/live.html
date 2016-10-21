@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>live</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<script src="zepto.min.js"></script>
+	<script>
+    (function(b){
+        var a={};
+        a.Html=b.getElementsByTagName("html")[0];
+        a.widthProportion=function(){
+            var c=(b.body&&b.body.clientWidth||a.Html.offsetWidth)/430;
+            return c>1?1:c
+        };
+        a.changePage=function(){
+            a.Html.setAttribute("style","font-size:"+a.widthProportion()*1+"rem")
+        };
+        a.changePage();
+        setInterval(a.changePage,1)
+    })(document);
+</script>
+</head>
+<body>
+	<div class="live">
+		<div class="top">
+			<div class="back" id="Back"><img src="images/btn_fanhui.png" alt=""></div>
+			<div class="share" id="Share"><img src="images/btn_fenxiang.png" alt=""></div>
+			<div class="video"></div>
+			<div class="title">
+				<div class="mainTitle">
+					<h1>苏州大学教研课程解说</h1>
+					<span class="on" id="J_state">直播中</span>
+				</div>
+				<div class="cue">
+					<p>
+						<span>讲师；</span>李海洋
+					</p>
+					<div class="follow">
+						<span class="gray" id="J_whether"></span>
+						<span class="num" id="J_num">3669</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">						
+			<div class="tab">
+				<div id="J_comment" class="selected"><span>评论</span></div>
+				<div id="J_list"><span>目录</span></div>
+				<div class="rules"></div>
+			</div>
+			<div class="commentWrap" id="J_commentWrap">
+				<div class="comment">
+					<div class="head" id="J_head"><img src="images/head01.jpg" alt=""></div>
+					<div class="info">
+						<div class="name" id="J_name">刘备</div>
+						<div class="time" id="J_time">
+							<span>8-7</span>
+							<span>21:56</span>
+						</div>
+						<div class="words" id="J_words">很通俗易懂学起来也很实用</div>
+					</div>
+				</div>
+				<div class="discuss">
+					<input type="text">
+					<span>发送</span>
+				</div>
+			</div>
+			<div class="listWrap" id="J_listWrap">
+				<div class="list">
+					<div class="listName">
+						<div class="head"><img src="images/head01.jpg" alt=""></div>
+						<div class="name">讲师：<span id="J_tname">李海洋</span></div>
+					</div>				
+					<div class="info">
+						<div class="title" id="J_title">苏州大学教研课程解说</div>
+						<div class="time" id="J_startTime">开讲时间：2016.09.15 09:00</div>
+						<div class="state on">直播中</div>
+					</div>
+					<div class="interest add" id="J_interest"></div>
+				</div>
+				<div class="list">
+					<div class="listName">
+						<div class="head"><img src="images/head01.jpg" alt=""></div>
+						<div class="name">讲师：<span id="J_tname">李海洋</span></div>
+					</div>				
+					<div class="info">
+						<div class="title" id="J_title">苏州大学教研课程解说</div>
+						<div class="time" id="J_startTime">开讲时间：2016.09.15 09:00</div>
+						<div class="state over">已结束</div>
+					</div>
+					<div class="interest add" id="J_interest"></div>
+				</div>
+				<div class="list">
+					<div class="listName">
+						<div class="head"><img src="images/head01.jpg" alt=""></div>
+						<div class="name">讲师：<span id="J_tname">李海洋</span></div>
+					</div>				
+					<div class="info">
+						<div class="title" id="J_title">苏州大学教研课程解说</div>
+						<div class="time" id="J_startTime">开讲时间：2016.09.15 09:00</div>
+						<div class="state yet">未开始</div>
+					</div>
+					<div class="interest add" id="J_interest"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+$(function(){
+	$("#J_whether").click(function(){
+		$(this).toggleClass("red");
+	});
+	$("#J_comment").click(function(){
+		$("#J_comment").attr("class","selected");
+		$("#J_list").removeClass("selected");
+		$("#J_commentWrap").show();
+		$("#J_listWrap").hide();
+	});
+	$("#J_list").click(function(){
+		$("#J_list").attr("class","selected");
+		$("#J_comment").removeClass("selected");
+		$("#J_listWrap").show();
+		$("#J_commentWrap").hide();
+	})
+	$(".interest").click(function(){
+		$(this).toggleClass("added");
+	});
+})
+</script>
+</html>
