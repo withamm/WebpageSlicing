@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.clearfloat{
+	overflow: hidden;
+}
+.f_main{
+	padding-top: 120px;
+	background: #f9f6f3;
+}
+.f_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+/* 基金图表 */
+.f_top_left, .f_top_right{
+	float: left;
+	padding: 20px 26px;
+	background: #ffffff;
+	box-sizing: border-box;
+}
+.f_top_left{
+	width: 500px;
+}
+.f_top_right{
+	width: 700px;
+}
+.f_left_title ul li{
+	float: left;
+	padding: 5px;
+	margin-right: 10px;
+	color: #999999;
+	cursor: pointer;
+}
+.f_left_title .f_selected_li{
+	border-bottom: 2px solid #8d2525;
+	color: #000000;
+}
+.f_left_bar ul{
+	float: left;
+}
+.f_left_bar ul li{
+	float: left;
+	height: 25px;
+	padding: 0 5px;
+	margin-right: 10px;
+	border: 1px solid #8d2525;
+	line-height: 25px;
+	color: #8d2525;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.f_left_bar{
+	margin-top: 35px;
+}
+.f_floatbar{
+	float: right;
+	color: #000000;
+}
+.f_floatbar span{
+	color: #8d2525;
+}
+.f_floatbar .f_percent{
+	line-height: 20px;
+	font-size: 20px;
+	margin-left: 15px;
+}
+.f_left_chart{
+	padding: 35px 10px;
+}
+/* 货币表 */
