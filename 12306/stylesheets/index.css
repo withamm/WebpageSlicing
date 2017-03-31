@@ -1,0 +1,716 @@
+/* line 1, ../sass/index.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+}
+
+/* line 6, ../sass/index.scss */
+.header {
+  width: 100%;
+  background: #FFF;
+}
+/* line 9, ../sass/index.scss */
+.header .wrap {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 13, ../sass/index.scss */
+.header .wrap .contact {
+  float: left;
+  margin: 60px 0px 40px 30px;
+}
+/* line 16, ../sass/index.scss */
+.header .wrap .contact li {
+  list-style: none;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  color: #316745;
+}
+/* line 24, ../sass/index.scss */
+.header .wrap .designation {
+  width: 310px;
+  margin: 30px auto;
+}
+/* line 27, ../sass/index.scss */
+.header .wrap .designation li {
+  list-style: none;
+}
+/* line 29, ../sass/index.scss */
+.header .wrap .designation li img {
+  display: block;
+  height: 65px;
+  width: 60px;
+  margin: 0 auto;
+}
+/* line 35, ../sass/index.scss */
+.header .wrap .designation li h1 {
+  color: #333333;
+  font-size: 30px;
+  font-family: "STLiti";
+}
+/* line 42, ../sass/index.scss */
+.header .wrap .login {
+  float: right;
+  margin: 110px 20px 20px 0px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 12px;
+}
+/* line 48, ../sass/index.scss */
+.header .wrap .login i {
+  height: 12px;
+  margin: 0px 10px;
+  border-right: 1px solid #316745;
+}
+/* line 54, ../sass/index.scss */
+.header .wrap .login a {
+  text-decoration: none;
+  color: #316745;
+}
+/* line 59, ../sass/index.scss */
+.header .wrap .service {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* line 62, ../sass/index.scss */
+.header .wrap .service ul {
+  overflow: hidden;
+}
+/* line 64, ../sass/index.scss */
+.header .wrap .service ul li {
+  float: left;
+  width: 20%;
+  height: 40px;
+  list-style: none;
+}
+/* line 69, ../sass/index.scss */
+.header .wrap .service ul li a {
+  text-decoration: none;
+  color: #316745;
+  font-size: 14px;
+}
+/* line 75, ../sass/index.scss */
+.header .wrap .service ul .selected {
+  font-weight: bold;
+  background: url(../images/on.png) no-repeat;
+  background-position: 12% 23px;
+}
+
+/* line 84, ../sass/index.scss */
+.section {
+  overflow: hidden;
+  width: 100%;
+  background: url(../images/bg.png) no-repeat;
+}
+/* line 88, ../sass/index.scss */
+.section .wrap {
+  overflow: hidden;
+  width: 1100px;
+  margin: 15px auto;
+  margin-top: 20px;
+  padding: 25px;
+  background: url(../images/main_bg.png) no-repeat;
+}
+/* line 95, ../sass/index.scss */
+.section .wrap .cancle {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+}
+/* line 101, ../sass/index.scss */
+.section .wrap .bigUl {
+  float: left;
+  margin-left: 60px;
+}
+/* line 104, ../sass/index.scss */
+.section .wrap .bigUl li {
+  width: 160px;
+  list-style: none;
+  text-align: center;
+  /* .inputBox:focus::-webkit-input-placeholder{
+  	opacity: 1;
+  	color: #a83a00;
+  } */
+}
+/* line 108, ../sass/index.scss */
+.section .wrap .bigUl li .inputBox {
+  width: 160px;
+  height: 50px;
+  border: none;
+  margin-bottom: 15px;
+  color: #a83a00;
+  font-size: 30px;
+  text-align: center;
+  background: url(../images/input_bg.png) no-repeat;
+  outline: none;
+}
+/* line 119, ../sass/index.scss */
+.section .wrap .bigUl li ::-webkit-input-placeholder {
+  color: #a83a00;
+  opacity: 0.4;
+}
+/* line 127, ../sass/index.scss */
+.section .wrap .bigUl li .date {
+  font-size: 16px;
+}
+/* line 131, ../sass/index.scss */
+.section .wrap .bigUl .title {
+  color: #316745;
+  font-size: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-family: 'Microsoft YaHei';
+}
+/* line 138, ../sass/index.scss */
+.section .wrap .bigUl .remark {
+  color: #316745;
+  font-size: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-family: 'Verdana';
+  margin-bottom: 5px;
+}
+/* line 147, ../sass/index.scss */
+.section .wrap .check {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  background: url(../images/checkBox.png) no-repeat;
+  cursor: pointer;
+}
+/* line 157, ../sass/index.scss */
+.section .wrap .checked {
+  background: url(../images/checkedBox.png) no-repeat;
+}
+/* line 160, ../sass/index.scss */
+.section .wrap .city {
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 220px;
+  width: 520px;
+  border: 1px solid #3f714f;
+  background: #fdffde;
+  z-index: 500;
+}
+/* line 169, ../sass/index.scss */
+.section .wrap .city .tab_menu {
+  width: 400px;
+  height: 36px;
+  margin-left: 30px;
+  line-height: 36px;
+  border-bottom: 1px solid #000;
+}
+/* line 175, ../sass/index.scss */
+.section .wrap .city .tab_menu ul {
+  overflow: hidden;
+  padding: 0 25px;
+}
+/* line 178, ../sass/index.scss */
+.section .wrap .city .tab_menu ul li {
+  width: 60px;
+  list-style: none;
+  float: left;
+  font-size: 14px;
+  font-family: 'Verdana';
+  text-align: center;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+/* line 188, ../sass/index.scss */
+.section .wrap .city .tab_menu ul li:first-child {
+  width: 50px;
+  font-family: 'Microsoft YaHei';
+}
+/* line 192, ../sass/index.scss */
+.section .wrap .city .tab_menu ul .selected {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* line 198, ../sass/index.scss */
+.section .wrap .city .tab_box {
+  margin-bottom: 10px;
+}
+/* line 200, ../sass/index.scss */
+.section .wrap .city .tab_box .cities {
+  margin-left: 34px;
+  overflow: hidden;
+}
+/* line 203, ../sass/index.scss */
+.section .wrap .city .tab_box .cities ul {
+  overflow: hidden;
+}
+/* line 205, ../sass/index.scss */
+.section .wrap .city .tab_box .cities ul .nav {
+  height: 60px;
+  width: 25px;
+  pointer-events: none;
+}
+/* line 210, ../sass/index.scss */
+.section .wrap .city .tab_box .cities ul li {
+  float: left;
+  width: 68px;
+  height: 30px;
+  line-height: 30px;
+  color: #316745;
+  display: flex;
+  align-content: flex-start;
+  cursor: pointer;
+}
+/* line 222, ../sass/index.scss */
+.section .wrap .city .tab_box .disappear {
+  display: none;
+}
+/* line 225, ../sass/index.scss */
+.section .wrap .city .tab_box .pages {
+  float: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+/* line 229, ../sass/index.scss */
+.section .wrap .city .tab_box .pages span {
+  display: inline-block;
+  font-size: 14px;
+  color: #a83a00;
+  cursor: pointer;
+}
+/* line 235, ../sass/index.scss */
+.section .wrap .city .tab_box .pages span:first-child {
+  border-right: 1px solid #d5ae8d;
+  padding-right: 15px;
+}
+/* line 239, ../sass/index.scss */
+.section .wrap .city .tab_box .pages span:last-child {
+  border-left: 1px solid #bf7d58;
+  padding-left: 15px;
+}
+/* line 243, ../sass/index.scss */
+.section .wrap .city .tab_box .pages .null {
+  border-right: 1px solid #a83a00;
+  color: #c39c87;
+}
+/* line 250, ../sass/index.scss */
+.section .wrap #calendar {
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 400px;
+  padding: 10px 30px;
+  background: #fdffde;
+  border: 1px solid #3c6842;
+  overflow: hidden;
+  z-index: 200;
+}
+/* line 260, ../sass/index.scss */
+.section .wrap #calendar .right, .section .wrap #calendar .left {
+  float: left;
+}
+/* line 263, ../sass/index.scss */
+.section .wrap #calendar .right {
+  margin-left: 40px;
+}
+/* line 266, ../sass/index.scss */
+.section .wrap #calendar .title {
+  height: 25px;
+  width: 301px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+/* line 273, ../sass/index.scss */
+.section .wrap #calendar .title span {
+  display: inline-block;
+}
+/* line 278, ../sass/index.scss */
+.section .wrap #calendar table th {
+  width: 42px;
+  height: 30px;
+}
+/* line 282, ../sass/index.scss */
+.section .wrap #calendar table td {
+  width: 42px;
+  height: 25px;
+  text-align: center;
+  color: #316745;
+  cursor: pointer;
+}
+/* line 289, ../sass/index.scss */
+.section .wrap #calendar table .current {
+  background: url(../images/date_bg.png) no-repeat;
+  background-size: 25px;
+  background-position: 9px;
+  color: #fff;
+}
+/* line 295, ../sass/index.scss */
+.section .wrap #calendar table .pre {
+  color: #7bd29b;
+}
+/* line 299, ../sass/index.scss */
+.section .wrap #calendar .slide {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: 95px;
+  cursor: pointer;
+}
+/* line 306, ../sass/index.scss */
+.section .wrap #calendar .lastMonth {
+  left: 10px;
+  background: url(../images/lastMonth.png);
+}
+/* line 310, ../sass/index.scss */
+.section .wrap #calendar .nextMonth {
+  right: 10px;
+  background: url(../images/nextMonth.png);
+}
+/* line 315, ../sass/index.scss */
+.section .wrap .top {
+  margin-top: 15px;
+  padding-left: 40px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 320, ../sass/index.scss */
+.section .wrap .top .light {
+  opacity: 0.4;
+  pointer-events: none;
+}
+/* line 324, ../sass/index.scss */
+.section .wrap .top .getPoint {
+  opacity: 1;
+}
+/* line 327, ../sass/index.scss */
+.section .wrap .top .slide {
+  margin: 25px 0 0 40px;
+  opacity: 1;
+}
+/* line 330, ../sass/index.scss */
+.section .wrap .top .slide li {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 20px;
+  line-height: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #316745;
+  font-family: 'Microsoft YaHei';
+}
+/* line 340, ../sass/index.scss */
+.section .wrap .top .slide li input {
+  margin-left: 20px;
+}
+/* line 345, ../sass/index.scss */
+.section .wrap .top .transform, .section .wrap .top .transform:hover {
+  position: absolute;
+  top: 50px;
+  left: 267px;
+  width: 43px;
+  height: 31px;
+  cursor: pointer;
+}
+/* line 353, ../sass/index.scss */
+.section .wrap .top .transform {
+  background: url(../images/transform.png) no-repeat;
+}
+/* line 356, ../sass/index.scss */
+.section .wrap .top .transform:hover {
+  top: 46px;
+  left: 263px;
+  width: 51px;
+  height: 40px;
+  background: url(../images/transformed.png) no-repeat;
+  background-size: 51px 40px;
+}
+/* line 364, ../sass/index.scss */
+.section .wrap .top .back, .section .wrap .top .go {
+  position: absolute;
+  top: 60px;
+  width: 6px;
+  height: 12px;
+  cursor: pointer;
+}
+/* line 371, ../sass/index.scss */
+.section .wrap .top .back {
+  top: 60px;
+  left: 525px;
+  background: url(../images/back.png) no-repeat;
+}
+/* line 376, ../sass/index.scss */
+.section .wrap .top .go {
+  left: 707px;
+  background: url(../images/go.png) no-repeat;
+}
+/* line 380, ../sass/index.scss */
+.section .wrap .top .last, .section .wrap .top .before {
+  display: none;
+  position: absolute;
+  top: 66px;
+  width: 60px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #fdffde;
+  color: #316745;
+  font-size: 14px;
+}
+/* line 392, ../sass/index.scss */
+.section .wrap .top .last {
+  left: 535px;
+}
+/* line 395, ../sass/index.scss */
+.section .wrap .top .before {
+  left: 640px;
+}
+/* line 398, ../sass/index.scss */
+.section .wrap .top .show {
+  opacity: 1;
+}
+/* line 401, ../sass/index.scss */
+.section .wrap .top .route, .section .wrap .top .quickPic {
+  overflow: hidden;
+  float: left;
+  font-size: 14px;
+  margin-left: 60px;
+}
+/* line 406, ../sass/index.scss */
+.section .wrap .top .route .name, .section .wrap .top .quickPic .name {
+  float: left;
+  width: 70px;
+  color: #316745;
+}
+/* line 411, ../sass/index.scss */
+.section .wrap .top .route .routes, .section .wrap .top .route .dates, .section .wrap .top .quickPic .routes, .section .wrap .top .quickPic .dates {
+  float: left;
+  width: 310px;
+  color: #a83a00;
+  overflow: hidden;
+}
+/* line 416, ../sass/index.scss */
+.section .wrap .top .route .routes li, .section .wrap .top .route .dates li, .section .wrap .top .quickPic .routes li, .section .wrap .top .quickPic .dates li {
+  margin-right: 6px;
+  float: left;
+  color: #a83a00;
+  text-decoration: none;
+  list-style: none;
+}
+/* line 423, ../sass/index.scss */
+.section .wrap .top .route .routes li:hover, .section .wrap .top .route .dates li:hover, .section .wrap .top .quickPic .routes li:hover, .section .wrap .top .quickPic .dates li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 432, ../sass/index.scss */
+.section .wrap .top .quickPic .dates span {
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 437, ../sass/index.scss */
+.section .wrap .top .quickPic .dates span:hover {
+  text-decoration: underline;
+}
+/* line 443, ../sass/index.scss */
+.section .wrap .mid {
+  position: relative;
+  margin-top: 50px;
+}
+/* line 447, ../sass/index.scss */
+.section .wrap .mid ul img {
+  cursor: pointer;
+}
+/* line 451, ../sass/index.scss */
+.section .wrap .mid .popup {
+  position: absolute;
+  top: 33px;
+  overflow: hidden;
+  padding: 15px 25px 12px 10px;
+  font-size: 14px;
+  color: #316745;
+  background: #fdffde;
+  box-shadow: 0 0 1px 1px #d7e0bb;
+}
+/* line 460, ../sass/index.scss */
+.section .wrap .mid .popup .choose {
+  float: left;
+  overflow: hidden;
+  color: #a83a00;
+  margin-right: 10px;
+}
+/* line 465, ../sass/index.scss */
+.section .wrap .mid .popup .choose span {
+  margin-right: 7px;
+  cursor: pointer;
+}
+/* line 470, ../sass/index.scss */
+.section .wrap .mid .popup .options {
+  overflow: hidden;
+}
+/* line 472, ../sass/index.scss */
+.section .wrap .mid .popup .options ul {
+  float: left;
+  overflow: hidden;
+}
+/* line 475, ../sass/index.scss */
+.section .wrap .mid .popup .options ul li {
+  margin-bottom: 5px;
+  margin-right: 20px;
+  list-style: none;
+  display: flex;
+  align-content: flex-start;
+}
+/* line 481, ../sass/index.scss */
+.section .wrap .mid .popup .options ul li input {
+  margin-right: 5px;
+}
+/* line 488, ../sass/index.scss */
+.section .wrap .mid .seat {
+  display: none;
+  left: 60px;
+  z-index: 200;
+}
+/* line 493, ../sass/index.scss */
+.section .wrap .mid .train {
+  display: none;
+  left: 280px;
+  z-index: 180;
+}
+/* line 498, ../sass/index.scss */
+.section .wrap .mid .setOut {
+  display: none;
+  left: 500px;
+  z-index: 160;
+}
+/* line 503, ../sass/index.scss */
+.section .wrap .mid .passenger {
+  display: none;
+  left: 716px;
+  z-index: 140;
+}
+/* line 509, ../sass/index.scss */
+.section .wrap .mid .passenger .options ul li {
+  margin-right: 0px;
+}
+/* line 511, ../sass/index.scss */
+.section .wrap .mid .passenger .options ul li span {
+  width: 50px;
+}
+/* line 514, ../sass/index.scss */
+.section .wrap .mid .passenger .options ul li .idNum {
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* line 520, ../sass/index.scss */
+.section .wrap .mid .passenger .options .bottom {
+  color: #a83a00;
+  padding-left: 25px;
+}
+/* line 523, ../sass/index.scss */
+.section .wrap .mid .passenger .options .bottom span {
+  width: 40px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+/* line 533, ../sass/index.scss */
+.section .wrap .btn {
+  text-align: center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+/* line 538, ../sass/index.scss */
+.section .wrap .train_lists {
+  border-collapse: collapse;
+  width: 1050px;
+  font-size: 15px;
+  font-weight: normal;
+}
+/* line 543, ../sass/index.scss */
+.section .wrap .train_lists thead {
+  color: #FFF;
+  background: #316745;
+}
+/* line 546, ../sass/index.scss */
+.section .wrap .train_lists thead tr {
+  height: 105px;
+}
+/* line 548, ../sass/index.scss */
+.section .wrap .train_lists thead tr th {
+  font-weight: normal;
+}
+/* line 550, ../sass/index.scss */
+.section .wrap .train_lists thead tr th div {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 82px;
+  line-height: 82px;
+  border-right: 1px solid #56956d;
+}
+/* line 557, ../sass/index.scss */
+.section .wrap .train_lists thead tr th div ul {
+  padding-top: 20px;
+}
+/* line 560, ../sass/index.scss */
+.section .wrap .train_lists thead tr th div li {
+  height: 20px;
+  line-height: 20px;
+  list-style: none;
+}
+/* line 566, ../sass/index.scss */
+.section .wrap .train_lists thead tr th span {
+  position: absolute;
+  display: inline-block;
+  height: 11px;
+  width: 11px;
+}
+/* line 572, ../sass/index.scss */
+.section .wrap .train_lists thead tr th .setOutTime {
+  top: 28px;
+  left: 82px;
+  background: url(../images/up.png) no-repeat;
+}
+/* line 577, ../sass/index.scss */
+.section .wrap .train_lists thead tr th .arriveTime {
+  top: 48px;
+  left: 82px;
+  background: url(../images/down.png) no-repeat;
+}
+/* line 582, ../sass/index.scss */
+.section .wrap .train_lists thead tr th .time {
+  top: 40px;
+  left: 40px;
+  background: url(../images/down.png) no-repeat;
+}
+/* line 588, ../sass/index.scss */
+.section .wrap .train_lists thead tr th:first-child {
+  width: 80px;
+}
+/* line 594, ../sass/index.scss */
+.section .wrap .train_lists tbody tr {
+  height: 52px;
+  width: 100%;
+}
+/* line 598, ../sass/index.scss */
+.section .wrap .train_lists tbody tr:nth-child(2n+1) {
+  background-color: #efe1b0;
+}
+/* line 601, ../sass/index.scss */
+.section .wrap .train_lists tbody tr:nth-child(2n) {
+  background-color: #efdb91;
+}
+/* line 607, ../sass/index.scss */
+.section .footer {
+  height: 70px;
+  line-height: 70px;
+  margin-top: 13px;
+  background: #000;
+  color: #FFF;
+  text-align: center;
+}
