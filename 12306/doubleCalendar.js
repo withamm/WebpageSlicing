@@ -50,26 +50,13 @@ function reCalendar(side){
 		var newMonth = $('#calendar .right .month').html();
 	}
 	var newDay = new Date();
-	// console.log(newYear+'_'+newMonth);
-	// newDay.setFullYear(2012,12,2);
-	// console.log(newDay)
-	// var newYear = newDay.getFullYear(); //年份
-	// var newMonth = newDay.getMonth(); //月份
 	var newDate = newDay.getDate(); //今日日期
-	var n1str = new Date(newYear,newMonth,1); //当月第一天
-	// // console.log("重新画日历")
-	// // console.log("年份"+newYear);
-	// // console.log("月份"+newMonth);
-	// // console.log("日期"+newDate);
-	// // console.log("当月第一天"+n1str);
-
+	var n1str = new Date(newYear,newMonth,1); //当月第一天	
 	var firstday = n1str.getDay(); //当月第一天星期几 [0-6:周日-周六]
-	// // console.log("当月第一天星期几"+firstday);
 	var m_days = new Array(31,28+is_leap(newYear),31,30,31,30,31,31,30,31,30,31); //各月份的总天数
-
 	var week = new Array('一','二','三','四','五','六','日');
-
 	var tr_str = Math.ceil((m_days[newMonth-1] + firstday)/7); //表格所需要行数 
+	
 	for(i = 0;i < tr_str;i ++) { //表格的行
 	   $tr = $("<tr></tr>");
 	   for(k = 0;k < 7;k ++) { //表格每行的单元格
@@ -144,6 +131,29 @@ function changeM(obj){
 	calendar($newLY,$newLM);
 }
 
+var now = new Date();
+var t = new Date(now.getTime() + 86400000);
+var at = new Date(t.getTime() + 86400000);
+var week = new Array('日','一','二','三','四','五','六');
+var tomorrow = t.getFullYear() + '-' + (t.getMonth() + 1) + '-' + t.getDate() + '星期' + week[t.getDay()];
+var afterTomorrow = at.getFullYear() + '-' + (at.getMonth() + 1) + '-' + at.getDate() + '星期' + week[at.getDay()];
+var currentDate = parseInt($('#calendar tbody .currentValue').attr('name'));
+//前一天和后一天
+$('.top .back').click(function(){
+    if(currentDate>parseInt(new Date().getTime())){
+        currentDate = currentDate-86400000;
+        var b = new Date(currentDate);
+        var before = b.getFullYear() + '-' + (b.getMonth()+1) + '-' + b.getDate() + '星期' + week[b.getDay()];
+        $('#J_setOutDate').val(before);
+    }
+})
+
+$('.top .go').click(function(){
+    currentDate = (currentDate+86400000);
+    var b = new Date(currentDate);
+    var before = b.getFullYear() + '-' + (b.getMonth()+1) + '-' + b.getDate() + '星期' + week[b.getDay()];
+    $('#J_setOutDate').val(before);
+})
 //点击显示具体日期
 function datepicker(){
   $('#calendar tbody td').click(function(){
@@ -151,16 +161,17 @@ function datepicker(){
     if(!$(this).hasClass("pre")){
       $('#calendar tbody td').removeClass('currentValue');
       $(this).addClass('currentValue');
-      var $date = $(this).val();
+      currentDate = parseInt($(this).attr('name'));
+      var date = $(this).val();
       if($('#J_setOutDate').hasClass('focus')){
-          $('#J_setOutDate').val($date);
+          $('#J_setOutDate').val(date);
       }else if($('#J_returnDate').hasClass('focus')){
-          $('#J_returnDate').val($date);
+          $('#J_returnDate').val(date);
       }
     }
   })
-
 }
+
 
 
 
