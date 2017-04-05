@@ -81,10 +81,10 @@ $(document).ready(function(){
 	})*/
 
 	//tab切换
-	var $li = $('.tab_menu li');
-	$li.click(function(){
+	var li = $('.tab_menu li');
+	li.click(function(){
 		$(this).addClass('selected').siblings().removeClass('selected');
-		var index = $li.index(this);
+		var index = li.index(this);
 		$('.tab_box .cities').eq(index).show().siblings().hide();
 	})
 
@@ -164,84 +164,103 @@ $(document).ready(function(){
     	event.stopPropagation();
     })
 
-    //点击显示具体日期
-    $('#calendar tbody td').click(function(){
-        $('#calendar tbody td').removeClass('currentValue');
-        $(this).addClass('currentValue');
-    	var $date = $(this).val();
-    	if($('#J_setOutDate').hasClass('focus')){
-    		$('#J_setOutDate').val($date);
-    	}else if($('#J_returnDate').hasClass('focus')){
-    		$('#J_returnDate').val($date);
-    	}
-    })
+    // //点击显示具体日期
+    // $('#calendar tbody td').click(function(){
+    //     //console.log('1');
+    //     $('#calendar tbody td').removeClass('currentValue');
+    //     $(this).addClass('currentValue');
+    // 	var $date = $(this).val();
+    // 	if($('#J_setOutDate').hasClass('focus')){
+    // 		$('#J_setOutDate').val($date);
+    // 	}else if($('#J_returnDate').hasClass('focus')){
+    // 		$('#J_returnDate').val($date);
+    // 	}
+    // })
+    // function datepicker(){
+    //      $('#calendar tbody td').click(function(){
+    //         //console.log('1');
+    //         $('#calendar tbody td').removeClass('currentValue');
+    //         $(this).addClass('currentValue');
+    //         var $date = $(this).val();
+    //         if($('#J_setOutDate').hasClass('focus')){
+    //             $('#J_setOutDate').val($date);
+    //         }else if($('#J_returnDate').hasClass('focus')){
+    //             $('#J_returnDate').val($date);
+    //         }
+    //     })
+    //      console.log('test');
+    // }
+    //  setInterval(datepicker,1000);
 
     //选择城市
     $('.tab_box li').click(function(){
-    	$city = $(this).html();
+    	city = $(this).html();
     	if($('#J_from').hasClass('focus')){
-    		$('#J_from').val($city);
+    		$('#J_from').val(city);
     	}else if($('#J_arrive').hasClass('focus')){
-    		$('#J_arrive').val($city);
+    		$('#J_arrive').val(city);
     	}
     })
 
     //交换城市
     $('.transform') .click(function(){
-    	var $a = $('#J_from').val();
-    	var $b = $('#J_arrive').val();
-    	$('#J_from').val($b);
-    	$('#J_arrive').val($a);
+    	var a = $('#J_from').val();
+    	var b = $('#J_arrive').val();
+    	$('#J_from').val(b);
+    	$('#J_arrive').val(a);
     }) 
 
     //设置日期的默认值
-    var $now = $('#calendar tbody .current').val();
+    var now = $('#calendar tbody .current').val();
     //console.log($now);
-    $('#J_setOutDate').attr('placeholder',$now);
+    $('#J_setOutDate').attr('placeholder',now);
 
     //获取明天和后天的值
-    var $now = new Date();
-    var $t = new Date($now.getTime() + 86400000);
-    var $at = new Date($t.getTime() + 86400000);
-    var $week = new Array('日','一','二','三','四','五','六');
-    var $tomorrow = $t.getFullYear() + '-' + ($t.getMonth() + 1) + '-' + $t.getDate() + '星期' + $week[$t.getDay()];
-    var $afterTomorrow = $at.getFullYear() + '-' + ($at.getMonth() + 1) + '-' + $at.getDate() + '星期' + $week[$at.getDay()];
-
+    var now = new Date();
+    var t = new Date(now.getTime() + 86400000);
+    var at = new Date(t.getTime() + 86400000);
+    var week = new Array('日','一','二','三','四','五','六');
+    var tomorrow = t.getFullYear() + '-' + (t.getMonth() + 1) + '-' + t.getDate() + '星期' + week[t.getDay()];
+    var afterTomorrow = at.getFullYear() + '-' + (at.getMonth() + 1) + '-' + at.getDate() + '星期' + week[at.getDay()];
+    var currentDate = parseInt($('#calendar tbody .currentValue').attr('name'));
     //前一天和后一天
     $('.top .back').click(function(){
-        $backDate = $('#calendar tbody .currentValue').attr('name');
-        console.log($backDate);
-        var $b = new Date($backDate-86400000);
-        console.log($b);
-        var $before = $b.getFullYear() + '-' + ($b.getMonth() + 1) + '-' + $b.getDate() + '星期' + $week[$b.getDay()];
-        //console.log($before);
-        $('#J_setOutDate').val($before);
+        if(currentDate>parseInt(new Date().getTime())){
+            currentDate = currentDate-86400000;
+            var b = new Date(currentDate);
+            var before = b.getFullYear() + '-' + (b.getMonth()+1) + '-' + b.getDate() + '星期' + week[b.getDay()];
+            $('#J_setOutDate').val(before);
+        }
     })
 
     $('.top .go').click(function(){
-        $goDate = $('#calendar tbody .currentValue');
-        $('#J_setOutDate').val($goDate);
+        currentDate = (currentDate+86400000);
+        var b = new Date(currentDate);
+        var before = b.getFullYear() + '-' + (b.getMonth()+1) + '-' + b.getDate() + '星期' + week[b.getDay()];
+        $('#J_setOutDate').val(before);
     })
 
     //今天  明天 后天
     $('.quickPic .today').click(function(){
-    	var $today = $('#calendar tbody .current');
-    	 $('#J_setOutDate').val($today.val());
-         $('#J_setOutDate').attr('name',$today.attr('name'));
+    	var today = $('#calendar tbody .current');
+    	 $('#J_setOutDate').val(today.val());
+         $('#J_setOutDate').attr('name',today.attr('name'));
+         currentDate = parseInt(new Date().getTime());
     })
     $('.quickPic .tomorrow').click(function(){
-    	
-    	$('#J_setOutDate').val($tomorrow);
+    	$('#J_setOutDate').val(tomorrow);
+        currentDate = parseInt(new Date().getTime()+86400000);
     })
     $('.quickPic .afterTomorrow').click(function(){
-        $('#J_setOutDate').val($afterTomorrow);
+        $('#J_setOutDate').val(afterTomorrow);
+        currentDate = parseInt(new Date().getTime()+86400000*2);
     })
 
     //快速选择路线
 
     $('.routes li').click(function(){
-    	var $a = $(this).children('.start').html();
-    	var $b = $(this).children('.end').html();
+    	var a = $(this).children('.start').html();
+    	var b = $(this).children('.end').html();
 
     	$('#J_from').val($a);
     	$('#J_arrive').val($b);
@@ -252,4 +271,4 @@ $(document).ready(function(){
  
 
 
-})
+ })
